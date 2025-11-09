@@ -55,3 +55,4 @@ def calculate_regression_intercept(data1, data2):
     A = np.vstack([data1, np.ones(len(data1))]).T
     _, intercept = np.linalg.lstsq(A, data2, rcond=None)[0]
     return intercept    
+
